@@ -2,10 +2,10 @@ const bcrypt = require("bcryptjs");
 const salt = bcrypt.genSaltSync(10);
 
 exports.start =
-  `<b>Welcome to BSBA™: Unister Assistant!</b>` +
+  `<b>Welcome to Westman's: Assistant!</b>` +
   `\n` +
   `\n` +
-  `This bot helps you to manage with information about BSBA team.` +
+  `This bot helps you to manage with information about Chisel Devs.` +
   `\n` +
   `With the help of this bot you can do:` +
   `\n` +
@@ -60,7 +60,7 @@ exports.help =
   `\n` +
   `\n` +
   `<i>In order to use our inline mode, switch to inline mode ` +
-  `by typing: @bsba_bot and then start typing something there.</i>`;
+  `by typing: @westmans_bot and then start typing something there.</i>`;
 
 exports.minecraft = (data) =>
   `<b>The status of our minecraft server:</b>` +
