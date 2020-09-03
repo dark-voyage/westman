@@ -56,9 +56,9 @@ exports.help = (isAdmin) => {
     `<i>Be careful! Restricted for non-admin users.` +
     ` Heavily checked and database tested zone</i>`;
   if (isAdmin) {
-      return base + admin
+    return base + admin;
   } else {
-      return base
+    return base;
   }
 };
 
