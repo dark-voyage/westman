@@ -14,11 +14,11 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           format: html
           message: |
-            <b><a href="https://github.com/${{ github.repository }}">⛓ GitHub Update Notification ⛓</a></b>
+            <b>⛓ GitHub Update Notification ⛓</b>
 
             <b>🎛 Repo</b>: ${{ github.repository }}
             <b>🔌 Event:</b> <code>${{ github.event_name }}</code>
             <b>👤 Author:</b> <code>${{ github.actor }}</code>
             <b>📦 Summary:</b> <code>${{ github.event.head_commit.message }}</code>
 
-            <a href="https://github.com/${{ github.repository }}/commit/${{ github.sha }}">🔗 Commit</a> | <a href="https://github.com/${{ github.repository }}">🏷 Repo</a> | <a href="https://bsba.uz">📡 Home</a>
+            <a href="https://github.com/${{ github.repository }}/commit/${{ github.sha }}">🔗 Commit</a> | <a href="https://github.com/${{ github.repository }}">🏷 Repo</a> | <a href="https://chisel.uz">📡 Home</a>

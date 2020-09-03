@@ -8,7 +8,8 @@
     "development": "nodemon bin/www",
     "test": "node bin/test",
     "format": "prettier --write --check \"**/*.js\"\n",
-    "format:check": "prettier --check \"**/*.js\"\n"
+    "format:check": "prettier --check \"**/*.js\"\n",
+    "update": "yarn update"
   },
   "engines": {
     "node": ">=14.0.0",
