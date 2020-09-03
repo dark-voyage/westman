@@ -2,7 +2,7 @@
 
 
 
-<p align="center"> Elegant Confession manager for WIUT's students  <a href="https://tmux.github.io" target="_blank">tmux</a> color theme.</p>
+<p align="center"> Elegant Confession manager for <a href="https://wiut.uz" target="_blank">WIUT</a>'s students.</p>
 
 <p align="center">Designed for a fluent and clear workflow based on the <a href="https://www.nordtheme.com" target="_blank">Nord</a> color palette.</p>
 
