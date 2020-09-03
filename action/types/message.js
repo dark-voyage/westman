@@ -6,6 +6,7 @@ const consoles = require("../../layouts/consoles");
 const message = require("../../layouts/messages");
 const keyboard = require("../../layouts/keyboards");
 const env = require("../../core/env");
+const gifs = require("../../database/db").gifs
 
 composer.hears(/\/cm (.*)/gi, async (ctx) => {
   const confessionText = ctx.match[1];
@@ -31,7 +32,7 @@ composer.hears(/\/cm (.*)/gi, async (ctx) => {
 
 composer.hears(/\/cm/, async (ctx) => {
   await ctx.replyWithAnimation(
-    { url: `https://media.giphy.com/media/l3fQulUUVwxr4Rvt6/source.gif` },
+    { url: gifs.cm },
     {
       parse_mode: "HTML",
       caption:

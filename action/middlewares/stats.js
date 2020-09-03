@@ -1,5 +1,6 @@
 const { composer, middleware } = require("../../core/bot");
 
+const gifs = require('../../database/db').gifs
 const consoles = require("../../layouts/consoles");
 const security = require("../security");
 const database = require("../../database/db");
@@ -28,7 +29,7 @@ composer.command(`stats`, async (ctx) => {
   };
 
   await ctx.replyWithAnimation(
-    { url: `https://media.giphy.com/media/3o6UAYBY07Lv7rgfde/source.gif` },
+    { url: gifs.stats },
     {
       caption:
         `<b>User status preview:</b>` +
