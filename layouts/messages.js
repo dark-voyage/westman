@@ -36,8 +36,8 @@ exports.help =
   `/check - <code>check health of API responses</code>` +
   `\n` +
   `/stats - <code>check admin stats of user</code>` +
-  `\n` +
-  `/minecraft - <code>check server status</code>` +
+  // `\n` +
+  // `/minecraft - <code>check server status</code>` +
   `\n` +
   `/admins - <code>get infos about admins</code>` +
   `\n` +
@@ -50,6 +50,15 @@ exports.help =
   `/feedback - <code>leave a feedback to admins</code>` +
   `\n` +
   `\n` +
+  `<b>Confession commands:</b>` +
+  `\n` +
+  `/cm - <code>send message</code>` +
+  `\n` +
+  `/reply - <code>reply to a message in confession</code>` +
+  `\n` +
+  `\n` +
+  `<i>In order to send video, photo or audio message to our confession, ` +
+  `just send the content and leave your comment as caption to your content.</i>` +
   `<b>Admin commands:</b>` +
   `\n` +
   `/add - <code>add temporary admin</code>` +
@@ -59,10 +68,6 @@ exports.help =
   `/reset - <code>reset temporary admin list</code>` +
   `\n` +
   `/list - <code>list temporary admins</code>` +
-  `\n` +
-  `\n` +
-  `<i>In order to send video, photo or audio message to our confession, ` +
-  `just send the content and leave your comment as caption to your content.</i>` +
   `\n` +
   `\n` +
   `<i>In order to use our inline mode, switch to inline mode ` +
