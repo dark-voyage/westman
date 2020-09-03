@@ -1,6 +1,5 @@
 const { composer, middleware } = require("../../core/bot");
 
-const crc32 = require("crc32");
 const consoles = require("../../layouts/consoles");
 const message = require("../../layouts/messages");
 const keyboard = require("../../layouts/keyboards");
