@@ -58,6 +58,8 @@ exports.help =
   `\n` +
   `<i>In order to send video, photo or audio message to our confession, ` +
   `just send the content and leave your comment as caption to your content.</i>` +
+  `\n` +
+  `\n` +
   `<b>Admin commands:</b>` +
   `\n` +
   `/add - <code>add temporary admin</code>` +
