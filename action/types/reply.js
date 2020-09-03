@@ -12,18 +12,10 @@ composer.hears(
   async (ctx) => {
     const replyTo = parseInt(ctx.match[1]); // https://t.me/westmans/<X>
     const confessionText = ctx.match[2];
-    const user = await crc32(ctx.from.first_name, true);
 
     await ctx.telegram.sendMessage(
       env.CONFESSION,
-      `#reply` +
-        `\n` +
-        `<b>New reply from:</b>` +
-        `\n` +
-        `<code>${user}</code>:` +
-        `\n` +
-        `\n` +
-        `<i>${confessionText}</i>`,
+      `#reply` + `\n` + `<i>${confessionText}</i>`,
       {
         parse_mode: "HTML",
         reply_to_message_id: replyTo,

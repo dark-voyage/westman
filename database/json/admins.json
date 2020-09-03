@@ -7,7 +7,17 @@
     "profile": "https://genemator.me",
     "telegram": "genemator",
     "github": "genemators",
-    "experience": ["Javascript (EcmaScript 2019)", "Typescript", "Python 2", "Python 3", "Java", "Kotlin", "C++", "C", "Assembly"],
+    "experience": [
+      "Javascript (EcmaScript 2019)",
+      "Typescript",
+      "Python 2",
+      "Python 3",
+      "Java",
+      "Kotlin",
+      "C++",
+      "C",
+      "Assembly"
+    ],
     "avatar": "./assets/avatars/genemator.jpg"
   },
   "Geolinda": {

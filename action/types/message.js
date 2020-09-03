@@ -9,17 +9,9 @@ const gifs = require("../../database/db").gifs;
 
 composer.hears(/\/cm (.*)/gi, async (ctx) => {
   const confessionText = ctx.match[1];
-  const user = await crc32(ctx.from.first_name, true);
   await ctx.telegram.sendMessage(
     env.CONFESSION,
-    `#message` +
-      `\n` +
-      `<b>New message from:</b>` +
-      `\n` +
-      `<code>${user}</code>:` +
-      `\n` +
-      `\n` +
-      `<i>${confessionText}</i>`,
+    `#message \<number\>` + `\n` + `<i>${confessionText}</i>`,
     {
       parse_mode: "HTML",
     }

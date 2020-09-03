@@ -100,12 +100,10 @@ exports.invalid = Markup.inlineKeyboard([
 
 exports.photo = Markup.inlineKeyboard([
   [Markup.urlButton(`Upload your own photo!`, `https://t.me/westmans_bot`)],
-  [Markup.urlButton(`Community Group`, `https://t.me/chiseldevs`)],
 ]);
 
 exports.video = Markup.inlineKeyboard([
   [Markup.urlButton(`Upload your own video!`, `https://t.me/westmans_bot`)],
-  [Markup.urlButton(`Community Group`, `https://t.me/chiseldevs`)],
 ]);
 
 exports.audio = Markup.inlineKeyboard([
@@ -115,7 +113,6 @@ exports.audio = Markup.inlineKeyboard([
       `https://t.me/westmans_bot`
     ),
   ],
-  [Markup.urlButton(`Community Group`, `https://t.me/chiseldevs`)],
 ]);
 
 exports.inline = (data) =>

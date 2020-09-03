@@ -1,5 +1,3 @@
-const crc32 = require("crc32");
-
 exports.start =
   `<b>Welcome to Westman's: Assistant!</b>` +
   `\n` +
@@ -12,8 +10,8 @@ exports.start =
   `<code>* Check current status of the team</code>` +
   `\n` +
   `<code>* Check the members & their statuses</code>` +
-  `\n` +
-  `<code>* Check status of minecraft servers</code>` +
+  // `\n` +
+  // `<code>* Check status of minecraft servers</code>` +
   `\n` +
   `<code>* Check statuses of github repositories</code>` +
   `\n` +
@@ -185,34 +183,13 @@ exports.invalid = `<b>This command or message is invalid. Please see our command
 exports.invalid_query = `<b>Ehm!</b>`;
 
 exports.photo = (data) =>
-  `<b>#photo</b>` +
-  `\n` +
-  `<b>A new photo upload by:</b>` +
-  `\n` +
-  `<code>${crc32(data.from.first_name, true)}</code>` +
-  `\n` +
-  `\n` +
-  `<i>${data.message.caption || ` `}</i>`;
+  `<b>#photo</b>` + `\n` + `<i>${data.message.caption || ` `}</i>`;
 
 exports.video = (data) =>
-  `<b>#video</b>` +
-  `\n` +
-  `<b>A new video upload by:</b>` +
-  `\n` +
-  `<code>${crc32(data.from.first_name, true)}</code>` +
-  `\n` +
-  `\n` +
-  `<i>${data.message.caption || ` `}</i>`;
+  `<b>#video</b>` + `\n` + `<i>${data.message.caption || ` `}</i>`;
 
 exports.audio = (data) =>
-  `<b>#audio</b>` +
-  `\n` +
-  `<b>A new audio upload by:</b>` +
-  `\n` +
-  `<code>${crc32(data.from.first_name, true)}</code>` +
-  `\n` +
-  `\n` +
-  `<i>${data.message.caption || ` `}</i>`;
+  `<b>#audio</b>` + `\n` + `<i>${data.message.caption || ` `}</i>`;
 
 exports.inline = (data) =>
   `<b><a href="${data["html_url"]}">〰 GitHub Project Review 〰</a></b>` +

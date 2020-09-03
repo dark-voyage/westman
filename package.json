@@ -6,9 +6,9 @@
   "scripts": {
     "start": "node bin/www",
     "development": "nodemon bin/www",
-    "test": "node bin/test",
-    "format": "prettier --write --check \"**/*.js\"\n",
-    "format:check": "prettier --check \"**/*.js\"\n",
+    "test": "npm run format:check",
+    "format": "prettier --write --check \"**/*.{js,json}\"\n",
+    "format:check": "prettier --check \"**/*.{js,json}\"\n",
     "update": "yarn update"
   },
   "engines": {
