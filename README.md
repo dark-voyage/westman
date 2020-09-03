@@ -1,7 +1,7 @@
 <p align="center"><a href="https://chisel.uz" target="_blank"><img height="500" width="500" src="https://raw.githubusercontent.com/chiseldevs/westman/master/assets/logo.png"/></a></p>
 
 
-<h3 align="center">Westman's Confession Manager</h3>
+<h2 align="center">Westman's Confession Manager</h2>
 
 <p align="center"> Elegant Confession manager for <a href="https://wiut.uz" target="_blank">WIUT</a>'s students.</p>
 
