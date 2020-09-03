@@ -37,8 +37,8 @@ exports.help =
   `/stats - <code>check admin stats of user</code>` +
   // `\n` +
   // `/minecraft - <code>check server status</code>` +
-  `\n` +
-  `/admins - <code>get infos about admins</code>` +
+  // `\n` +
+  // `/admins - <code>get infos about admins</code>` +
   `\n` +
   `/links - <code>show bsba url links</code>` +
   `\n` +
@@ -47,6 +47,10 @@ exports.help =
   `/join - <code>request to join our organisation</code>` +
   `\n` +
   `/feedback - <code>leave a feedback to admins</code>` +
+  `\n` +
+  `\n` +
+  `<i>In order to use our inline mode, switch to inline mode ` +
+  `by typing: @westmans_bot and then start typing something there.</i>` +
   `\n` +
   `\n` +
   `<b>Confession commands:</b>` +
@@ -71,8 +75,8 @@ exports.help =
   `/list - <code>list temporary admins</code>` +
   `\n` +
   `\n` +
-  `<i>In order to use our inline mode, switch to inline mode ` +
-  `by typing: @westmans_bot and then start typing something there.</i>`;
+  `<i>Be careful! Restricted for non-admin users.` +
+  ` Heavily checked and database tested zone</i>`;
 
 exports.minecraft = (data) =>
   `<b>The status of our minecraft server:</b>` +
