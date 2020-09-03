@@ -61,6 +61,10 @@ exports.help =
   `/list - <code>list temporary admins</code>` +
   `\n` +
   `\n` +
+  `<i>In order to send video, photo or audio message to our confession, ` +
+  `just send the content and leave your comment as caption to your content.</i>` +
+  `\n` +
+  `\n` +
   `<i>In order to use our inline mode, switch to inline mode ` +
   `by typing: @westmans_bot and then start typing something there.</i>`;
 
