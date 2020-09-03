@@ -2,7 +2,7 @@
 
 
 
-<p align="center"> Elegant Confession manager for <a href="https://wiut.uz" target="_blank">WIUT</a>'s students.</p>
+<h3 align="center"> Elegant Confession manager for <a href="https://wiut.uz" target="_blank">WIUT</a>'s students.</h3>
 
 <p align="center">Send or share your messages & contents privately with the help of our <a href="https://t.me/westmans_bot" target="_blank">telegram bot</a>.</p>
 
