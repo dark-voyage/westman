@@ -2,7 +2,6 @@ const { composer, middleware } = require("../../core/bot");
 
 const gifs = require("../../database/db").gifs;
 const consoles = require("../../layouts/consoles");
-const security = require("../security");
 const database = require("../../database/db");
 
 composer.command(`stats`, async (ctx) => {

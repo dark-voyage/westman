@@ -64,6 +64,8 @@ exports.help = (isAdmin) => {
 
 exports.invalid = `<b>This command or message is invalid. Please see our command list for more information!</b>`;
 
+exports.error_admin = `<b>You don't have enough power to do that!</b>`;
+
 exports.invalid_query = `<b>Ehm!</b>`;
 
 exports.photo = (data) =>
