@@ -1,5 +1,4 @@
-const bcrypt = require("bcryptjs");
-const salt = bcrypt.genSaltSync(10);
+const crc32 = require("crc32");
 
 exports.start =
   `<b>Welcome to Westman's: Assistant!</b>` +
@@ -184,7 +183,7 @@ exports.photo = (data) =>
   `\n` +
   `<b>A new photo upload by:</b>` +
   `\n` +
-  `<code>${bcrypt.hashSync(data.from.first_name, salt)}</code>` +
+  `<code>${crc32(data.from.first_name, true)}</code>` +
   `\n` +
   `\n` +
   `<i>${data.message.caption || ` `}</i>`;
@@ -194,7 +193,7 @@ exports.video = (data) =>
   `\n` +
   `<b>A new video upload by:</b>` +
   `\n` +
-  `<code>${bcrypt.hashSync(data.from.first_name, salt)}</code>` +
+  `<code>${crc32(data.from.first_name, true)}</code>` +
   `\n` +
   `\n` +
   `<i>${data.message.caption || ` `}</i>`;
@@ -204,7 +203,7 @@ exports.audio = (data) =>
   `\n` +
   `<b>A new audio upload by:</b>` +
   `\n` +
-  `<code>${bcrypt.hashSync(data.from.first_name, salt)}</code>` +
+  `<code>${crc32(data.from.first_name, true)}</code>` +
   `\n` +
   `\n` +
   `<i>${data.message.caption || ` `}</i>`;

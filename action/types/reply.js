@@ -7,14 +7,16 @@ const keyboard = require("../../layouts/keyboards");
 const env = require("../../core/env");
 const gifs = require("../../database/db").gifs;
 
-composer.hears(/\/cm (.*)/gi, async (ctx) => {
-  const confessionText = ctx.match[1];
+composer.hears(/\/reply https:\/\/t.me\/westmans\/(.*) : (.*)/, async (ctx) => {
+  const replyTo = parseInt(ctx.match[1]); // https://t.me/westmans/<X>
+  const confessionText = ctx.match[2];
   const user = await crc32(ctx.from.first_name, true);
+
   await ctx.telegram.sendMessage(
     env.CONFESSION,
-    `#message` +
+    `#reply` +
       `\n` +
-      `<b>New message from:</b>` +
+      `<b>New reply from:</b>` +
       `\n` +
       `<code>${user}</code>:` +
       `\n` +
@@ -22,6 +24,7 @@ composer.hears(/\/cm (.*)/gi, async (ctx) => {
       `<i>${confessionText}</i>`,
     {
       parse_mode: "HTML",
+      reply_to_message_id: replyTo,
     }
   );
   await ctx.replyWithHTML(
@@ -29,23 +32,25 @@ composer.hears(/\/cm (.*)/gi, async (ctx) => {
   );
 });
 
-composer.hears(/\/cm/, async (ctx) => {
+composer.hears(/\/reply/, async (ctx) => {
   await ctx.replyWithAnimation(
     { url: gifs.cm },
     {
       parse_mode: "HTML",
       caption:
-        `<b>You requested cm command where you can send message to the confession</b>` +
+        `<b>You requested reply command where you can reply to a message from the confession</b>` +
         `\n` +
         `\n` +
-        `<i>In order to send a message to the channel, please use our templates shown below:</i>` +
+        `<i>In order to reply to a message on channel, please use our templates shown below:</i>` +
         `\n` +
-        `<code>/cm &lt;your very long text here&gt;</code>` +
+        `<b>1.</b> <i>Copy the link of the message you are going to reply to. It should be something like that: https://t.me/westmans/xxx</i>` +
+        `\n` +
+        `<b>2.</b> <code>/reply &lt;message link : message&gt;</code>` +
         `\n` +
         `\n` +
         `<i>Example:</i>` +
         `\n` +
-        `<code>/cm Nobody can see my privacy. I'm private & fast!</code>`,
+        `<code>/reply https://t.me/westmans/14 : Hey you!</code>`,
     }
   );
 });
