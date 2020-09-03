@@ -27,7 +27,7 @@ exports.help = (isAdmin) => {
     `\n` +
     `/stats - <code>check stats of user</code>` +
     `\n` +
-    `/links - <code>show bsba url links</code>` +
+    `/links - <code>show url links</code>` +
     `\n` +
     `/feedback - <code>leave a feedback to admins</code>` +
     `\n` +
@@ -85,4 +85,4 @@ exports.audio = async (data) =>
   `\n` +
   `<i>${data.message.caption || ` `}</i>`;
 
-exports.links = `<b>Here are groups & bots of team BSBA:</b>`;
+exports.links = `<b>Here are Westman's groups & channels:</b>`;
