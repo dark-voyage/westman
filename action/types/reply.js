@@ -8,7 +8,7 @@ const env = require("../../core/env");
 const gifs = require("../../database/db").gifs;
 
 composer.hears(
-  /\/reply (https:\/\/t.me\/westmans\/)?(.*)(\/)? : (.*)/,
+  /\/reply (?:https:\/\/t.me\/westmans\/)?(.*)(?:\s)?:(?:\s)?(.*)/g,
   async (ctx) => {
     const replyTo = parseInt(ctx.match[1]); // https://t.me/westmans/<X>
     const confessionText = ctx.match[2];
