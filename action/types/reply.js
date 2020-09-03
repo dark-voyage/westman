@@ -1,10 +1,9 @@
 const { composer, middleware } = require("../../core/bot");
 
 const consoles = require("../../layouts/consoles");
-const message = require("../../layouts/messages");
-const keyboard = require("../../layouts/keyboards");
 const env = require("../../core/env");
 const gifs = require("../../database/db").gifs;
+const counter = require("../../database/counter");
 
 composer.hears(
   /\/reply (?:https:\/\/t.me\/westmans\/)?(.*)(?:\s)?:(?:\s)?(.*)/g,
@@ -14,7 +13,7 @@ composer.hears(
 
     await ctx.telegram.sendMessage(
       env.CONFESSION,
-      `#reply` + `\n` + `<i>${confessionText}</i>`,
+      `#reply => ${await counter()}` + `\n` + `<i>${confessionText}</i>`,
       {
         parse_mode: "HTML",
         reply_to_message_id: replyTo,

@@ -1,16 +1,15 @@
 const { composer, middleware } = require("../../core/bot");
 
 const consoles = require("../../layouts/consoles");
-const message = require("../../layouts/messages");
-const keyboard = require("../../layouts/keyboards");
 const env = require("../../core/env");
 const gifs = require("../../database/db").gifs;
+const counter = require("../../database/counter");
 
 composer.hears(/\/cm (.*)/gi, async (ctx) => {
   const confessionText = ctx.match[1];
   await ctx.telegram.sendMessage(
     env.CONFESSION,
-    `#message \<number\>` + `\n` + `<i>${confessionText}</i>`,
+    `#message => ${await counter()}` + `\n` + `<i>${confessionText}</i>`,
     {
       parse_mode: "HTML",
     }
