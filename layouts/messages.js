@@ -171,9 +171,9 @@ exports.invalid_query = `<b>Ehm!</b>`;
 exports.photo = (data) =>
   `<b>#photo</b>` +
   `\n` +
-  `<b>A new photo upload by:` +
+  `<b>A new photo upload by:</b>` +
   `\n` +
-  `${bcrypt.hashSync(data.from.first_name, salt)}</b>` +
+  `<code>${bcrypt.hashSync(data.from.first_name, salt)}</code>` +
   `\n` +
   `\n` +
   `<i>${data.message.caption || ` `}</i>`;
@@ -181,9 +181,9 @@ exports.photo = (data) =>
 exports.video = (data) =>
   `<b>#video</b>` +
   `\n` +
-  `<b>A new video upload by:` +
+  `<b>A new video upload by:</b>` +
   `\n` +
-  `${bcrypt.hashSync(data.from.first_name, salt)}</b>` +
+  `<code>${bcrypt.hashSync(data.from.first_name, salt)}</code>` +
   `\n` +
   `\n` +
   `<i>${data.message.caption || ` `}</i>`;
@@ -191,9 +191,9 @@ exports.video = (data) =>
 exports.audio = (data) =>
   `<b>#audio</b>` +
   `\n` +
-  `<b>A new audio upload by:` +
+  `<b>A new audio upload by:</b>` +
   `\n` +
-  `${bcrypt.hashSync(data.from.first_name, salt)}</b>` +
+  `<code>${bcrypt.hashSync(data.from.first_name, salt)}</code>` +
   `\n` +
   `\n` +
   `<i>${data.message.caption || ` `}</i>`;

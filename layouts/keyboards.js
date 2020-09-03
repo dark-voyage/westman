@@ -36,11 +36,11 @@ exports.check = Markup.inlineKeyboard([
 ]);
 
 exports.form_accept = Markup.inlineKeyboard([
-  [Markup.urlButton(`Community Group`, `https://t.me/bsba_group`)],
+  [Markup.urlButton(`Community Group`, `https://t.me/chiseldevs`)],
 ]);
 
 exports.form_decline = Markup.inlineKeyboard([
-  [Markup.urlButton(`Feedback Zone`, `https://t.me/bsba_r8`)],
+  [Markup.urlButton(`Feedback Zone`, `https://t.me/chiseldevs`)],
 ]);
 
 exports.form_complete = Markup.inlineKeyboard([
@@ -99,18 +99,23 @@ exports.invalid = Markup.inlineKeyboard([
 ]);
 
 exports.photo = Markup.inlineKeyboard([
-  [Markup.urlButton(`Upload your own art!`, `https://t.me/bsba_bot`)],
-  [Markup.urlButton(`Community Group`, `https://t.me/bsba_group`)],
+  [Markup.urlButton(`Upload your own photo!`, `https://t.me/westmans_bot`)],
+  [Markup.urlButton(`Community Group`, `https://t.me/chiseldevs`)],
 ]);
 
 exports.video = Markup.inlineKeyboard([
-  [Markup.urlButton(`Upload your own video!`, `https://t.me/bsba_bot`)],
-  [Markup.urlButton(`Community Group`, `https://t.me/bsba_group`)],
+  [Markup.urlButton(`Upload your own video!`, `https://t.me/westmans_bot`)],
+  [Markup.urlButton(`Community Group`, `https://t.me/chiseldevs`)],
 ]);
 
 exports.audio = Markup.inlineKeyboard([
-  [Markup.urlButton(`Upload your own music & audio!`, `https://t.me/bsba_bot`)],
-  [Markup.urlButton(`Community Group`, `https://t.me/bsba_group`)],
+  [
+    Markup.urlButton(
+      `Upload your own music & audio!`,
+      `https://t.me/westmans_bot`
+    ),
+  ],
+  [Markup.urlButton(`Community Group`, `https://t.me/chiseldevs`)],
 ]);
 
 exports.inline = (data) =>
@@ -142,12 +147,6 @@ exports.links = async (links) => {
 
 exports.stream = Markup.inlineKeyboard([
   [Markup.urlButton(`Genemator`, `http://twitch.com/genemators`)],
-  [
-    Markup.urlButton(
-      `iBlogs`,
-      `https://www.youtube.com/channel/UCLvAJjc5gvy_6QL2f-RRBuw`
-    ),
-  ],
 ]);
 
 exports.minecraft_account = Markup.inlineKeyboard([

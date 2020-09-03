@@ -9,9 +9,14 @@ const env = require("../../core/env");
 
 composer.hears(/\/cm (.*)/gi, async (ctx) => {
   const confessionText = ctx.match[1];
+  const user = ctx.from.first_name;
   await ctx.telegram.sendMessage(
     env.CONFESSION,
-    `<b>New message from</b> <code>${ctx.from.id}</code>:` +
+    `#message` +
+      `\n` +
+      `<b>New message from:</b>` +
+      `\n` +
+      `<code>${bcrypt.hashSync(ctx.from.first_name, salt)}</code>:` +
       `\n` +
       `\n` +
       `<i>${confessionText}</i>`,
@@ -24,23 +29,23 @@ composer.hears(/\/cm (.*)/gi, async (ctx) => {
   );
 });
 
-composer.hears(/\/feedback/, async (ctx) => {
+composer.hears(/\/cm/, async (ctx) => {
   await ctx.replyWithAnimation(
     { url: `https://media.giphy.com/media/l3fQulUUVwxr4Rvt6/source.gif` },
     {
       parse_mode: "HTML",
       caption:
-        `<b>You requested feedback command where you can send feedback to admins</b>` +
+        `<b>You requested cm command where you can send message to the confession</b>` +
         `\n` +
         `\n` +
-        `<i>In order to send a feedback to us, please use our templates shown below:</i>` +
+        `<i>In order to send a message to the channel, please use our templates shown below:</i>` +
         `\n` +
-        `<code>/feedback &lt;your very long text here&gt;</code>` +
+        `<code>/cm &lt;your very long text here&gt;</code>` +
         `\n` +
         `\n` +
         `<i>Example:</i>` +
         `\n` +
-        `<code>/feedback Hello dear admins. BSBA team is the best!</code>`,
+        `<code>/cm Nobody can see my privacy. I'm private & fast!</code>`,
     }
   );
 });
