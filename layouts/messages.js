@@ -22,6 +22,8 @@ exports.start =
   `\n` +
   `<code>* Request to join our github organisation</code>` +
   `\n` +
+  `<code>* Send contents to our confession channel</code>` +
+  `\n` +
   `\n` +
   `<i>In order to see full detailed usage information of the bot, press the button below.</i>`;
 
