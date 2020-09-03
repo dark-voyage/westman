@@ -6,8 +6,6 @@
 
 <p align="center">Send or share your messages & contents privately with the help of our <a href="https://t.me/westmans_bot" target="_blank">telegram bot</a>.</p>
 
-<p align="center"><a href="https://www.nordtheme.com/ports/tmux" target="_blank"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/tmux/overview.png"/></a></p>
-
 
 
 <p align="center">Copyright &copy; 2020 <a href="https://chisel.uz" target="_blank">Chisel Devs</a></p>
