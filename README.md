@@ -4,7 +4,7 @@
 
 <p align="center"> Elegant Confession manager for <a href="https://wiut.uz" target="_blank">WIUT</a>'s students.</p>
 
-<p align="center">Designed for a fluent and clear workflow based on the <a href="https://www.nordtheme.com" target="_blank">Nord</a> color palette.</p>
+<p align="center">Send or share your messages & contents privately with the help of our <a href="https://t.me/westmans_bot" target="_blank">telegram bot</a>.</p>
 
 <p align="center"><a href="https://www.nordtheme.com/ports/tmux" target="_blank"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/tmux/overview.png"/></a></p>
 
