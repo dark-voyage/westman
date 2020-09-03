@@ -6,7 +6,7 @@ const consoles = require("../../layouts/consoles");
 const message = require("../../layouts/messages");
 const keyboard = require("../../layouts/keyboards");
 const env = require("../../core/env");
-const gifs = require("../../database/db").gifs
+const gifs = require("../../database/db").gifs;
 
 composer.hears(/\/cm (.*)/gi, async (ctx) => {
   const confessionText = ctx.match[1];

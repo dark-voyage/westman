@@ -1,6 +1,6 @@
 const { composer, middleware } = require("../../core/bot");
 
-const gifs = require('../../database/db').gifs
+const gifs = require("../../database/db").gifs;
 const consoles = require("../../layouts/consoles");
 const security = require("../security");
 
