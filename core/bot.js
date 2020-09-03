@@ -37,6 +37,7 @@ if (env.ENVIRONMENT === "heroku") {
           `<a href="https://t.me/westmans_bot"><u>https://t.me/westmans_bot</u></a>`,
         {
           parse_mode: "HTML",
+          disable_notification: true
         }
       );
     })
