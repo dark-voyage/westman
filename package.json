@@ -7,8 +7,8 @@
     "start": "node bin/www",
     "development": "nodemon bin/www",
     "test": "npm run format:check",
-    "format": "prettier --write --check \"**/*.{js,json}\"\n",
-    "format:check": "prettier --check \"**/*.{js,json}\"\n",
+    "format": "prettier --write --check \"**/*.{js,json,md}\"\n",
+    "format:check": "prettier --check \"**/*.{js,json,md}\"\n",
     "update": "yarn update"
   },
   "engines": {
