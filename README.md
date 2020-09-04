@@ -8,6 +8,24 @@
 <p align="center">Send or share your messages & contents privately with the help of our <a href="https://t.me/westmans_bot" target="_blank">telegram bot</a>.</p>
 
 
+**This bot was built with [telegraf.js](https://github.com/telegraf/telegraf) in [Node.js](https://nodejs.org/en/). This bot works as package modular, so don't worry about adding your own customizations. It will not affect to the bot's working process. Just, don't forget to add your command to action's index and you're ready to go!**
+ 
+
+## Documentations
+* **Telegraf.js** - [Github](https://github.com/telegraf/telegraf)
+* **Telegram Bot API** - [Website](https://core.telegram.org/bots/api)
+
+
+## Examples Websites using Telegraf.js 
+There are tons of bots using Telegraf.js in their Telegram bot as:
+* [ChatAdmin](https://github.com/Khuzha/chatAdmin) by *Khuzha* - Helps to administer the chats
+* [BooksAndBot](https://github.com/dmtrbrl/BooksAndBot) by *dmtrbrl* - An inline bot that allows you to search for books and share them in a conversation. Powered by Goodreads
+* [CaptchaOnlyBot](https://github.com/Piterden/captcha_only_bot) by *Piterden* - Configurable question \w set of buttons on a new group user
+
+> The bot page is still in beta phase so feel free to [open issues](https://github.com/chiseldevs/westman/issues/new) and give me some suggestions.
+---
+
+> **Important Note:** Under the GPL-3.0 license, if you're running your own instance, you should add a link to the source [(this repository)](https://github.com/chiseldevs/westman) in your bot's bio or about page. If you're modifying this source and making your own bot, you should link to the source of your own version of the bot according to the MIT license. Check [LICENSE](LICENSE) for more info.
 
 <p align="center">Copyright &copy; 2020 <a href="https://chisel.uz" target="_blank">Chisel Devs</a></p>
 
