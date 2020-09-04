@@ -1,7 +1,8 @@
 <p align="center"><a href="https://chisel.uz" target="_blank"><img height="300" width="300" src="https://raw.githubusercontent.com/chiseldevs/westman/master/assets/logo.png"/></a></p>
-<p align="center"><a href="https://t.me/westmans_bot"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=Heroku&message=deployed&logoColor=eceff4&logo=github&colorA=4c566a&colorB=88c0d0"/></a></p>
 
 <h2 align="center">Westman's Confession Manager</h2>
+
+<p align="center"><a href="https://t.me/westmans_bot"><img src="https://img.shields.io/static/v1.svg?style=flat-square&label=Heroku&message=deployed&logoColor=eceff4&logo=github&colorA=4c566a&colorB=88c0d0"/></a></p>
 
 <p align="center"> Elegant Confession manager for <a href="https://wiut.uz" target="_blank">WIUT</a>'s students.</p>
 
