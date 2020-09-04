@@ -1,5 +1,5 @@
 require("./admin");
-require("./types");
 require("./actions");
 require("./middlewares");
+require("./types");
 require("./exclude");
