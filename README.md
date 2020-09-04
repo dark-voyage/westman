@@ -16,7 +16,7 @@
 * **Telegram Bot API** - [Website](https://core.telegram.org/bots/api)
 
 
-## Examples Websites using Telegraf.js 
+## Example bots using Telegraf.js 
 There are tons of bots using Telegraf.js in their Telegram bot as:
 * [ChatAdmin](https://github.com/Khuzha/chatAdmin) by *Khuzha* - Helps to administer the chats
 * [BooksAndBot](https://github.com/dmtrbrl/BooksAndBot) by *dmtrbrl* - An inline bot that allows you to search for books and share them in a conversation. Powered by Goodreads
@@ -25,7 +25,7 @@ There are tons of bots using Telegraf.js in their Telegram bot as:
 > The bot page is still in beta phase so feel free to [open issues](https://github.com/chiseldevs/westman/issues/new) and give me some suggestions.
 ---
 
-> **Important Note:** Under the GPL-3.0 license, if you're running your own instance, you should add a link to the source [(this repository)](https://github.com/chiseldevs/westman) in your bot's bio or about page. If you're modifying this source and making your own bot, you should link to the source of your own version of the bot according to the MIT license. Check [LICENSE](LICENSE) for more info.
+> **Important Note:** Under the GPL-3.0 license, if you're running your own instance, you should add a link to the source [(this repository)](https://github.com/chiseldevs/westman) in your bot's bio or about page. If you're modifying this source and making your own bot, you should link to the source of your own version of the bot according to the GPL-3.0 license. Check [LICENSE](LICENSE) for more info.
 
 <p align="center">Copyright &copy; 2020 <a href="https://chisel.uz" target="_blank">Chisel Devs</a></p>
 
