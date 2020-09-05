@@ -1,4 +1,4 @@
-const { filter } = require("../core/bot")
+const { filter } = require("../core/bot");
 const counter = require("../database/counter");
 
 exports.start =
