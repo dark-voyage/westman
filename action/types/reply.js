@@ -1,4 +1,4 @@
-const { composer, middleware } = require("../../core/bot");
+const { composer, middleware, filter } = require("../../core/bot");
 
 const consoles = require("../../layouts/consoles");
 const env = require("../../core/env");
@@ -9,7 +9,7 @@ composer.hears(
   /\/reply (?:https:\/\/t.me\/westmans\/)?(.*)(?:\s)?:(?:\s)?(.*)/g,
   async (ctx) => {
     const replyTo = parseInt(ctx.match[1]); // https://t.me/westmans/<X>
-    const confessionText = ctx.match[2];
+    const confessionText = filter.clean(ctx.match[2]);
 
     await ctx.telegram.sendMessage(
       env.CONFESSION,

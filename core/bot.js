@@ -1,7 +1,9 @@
 const { Telegraf, Composer } = require("telegraf");
+const Filter = require('bad-words');
 
-const consoles = require("../layouts/consoles");
 const env = require("./env");
+const filter = new Filter({ placeHolder: '$', replaceRegex: /[A-Za-z0-9가-힣_]/g});
+const consoles = require("../layouts/consoles");
 
 const bot = new Telegraf(env.BOT_TOKEN);
 const composer = new Composer();
@@ -53,6 +55,7 @@ if (env.ENVIRONMENT === "heroku") {
 
 module.exports = {
   bot,
+  filter,
   composer,
   middleware,
 };

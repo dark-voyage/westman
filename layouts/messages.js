@@ -1,3 +1,4 @@
+const { filter } = require("../core/bot")
 const counter = require("../database/counter");
 
 exports.start =
@@ -73,16 +74,16 @@ exports.invalid_query = `<b>Ehm!</b>`;
 exports.photo = async (data) =>
   `<b>#photo => ${await counter()}</b>` +
   `\n` +
-  `<i>${data.message.caption || ` `}</i>`;
+  `<i>${filter.clean(data.message.caption) || ` `}</i>`;
 
 exports.video = async (data) =>
   `<b>#video => ${await counter()}</b>` +
   `\n` +
-  `<i>${data.message.caption || ` `}</i>`;
+  `<i>${filter.clean(data.message.caption) || ` `}</i>`;
 
 exports.audio = async (data) =>
   `<b>#audio => ${await counter()}</b>` +
   `\n` +
-  `<i>${data.message.caption || ` `}</i>`;
+  `<i>${filter.clean(data.message.caption) || ` `}</i>`;
 
 exports.links = `<b>Here are Westman's groups & channels:</b>`;
