@@ -3,7 +3,7 @@ const Filter = require("bad-words");
 
 const env = require("./env");
 const filter = new Filter({
-  placeHolder: "$",
+  placeHolder: "X",
   replaceRegex: /[A-Za-z0-9가-힣_]/g,
 });
 const consoles = require("../layouts/consoles");
