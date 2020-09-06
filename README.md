@@ -1,4 +1,4 @@
-<p align="center"><a href="https://chisel.uz" target="_blank"><img height="300" width="300" src="https://raw.githubusercontent.com/chiseldevs/westman/master/assets/logo.png"/></a></p>
+<p align="center"><a href="https://chisel.uz" target="_blank"><img height="300" width="300" src="./assets/logo.png"/></a></p>
 
 <h2 align="center">Westman's Confession Manager</h2>
 
