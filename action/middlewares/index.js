@@ -1,5 +1,5 @@
 require("./help");
 require("./start");
-require("./stats");
+// require("./stats");
 require("./links");
 require("./feedback");

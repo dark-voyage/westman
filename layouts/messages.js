@@ -25,8 +25,8 @@ exports.help = (isAdmin) => {
     `\n` +
     `\n` +
     `/help - <code>show this helper message</code>` +
-    `\n` +
-    `/stats - <code>check stats of user</code>` +
+    // `\n` +
+    // `/stats - <code>check stats of user</code>` +
     `\n` +
     `/links - <code>show url links</code>` +
     `\n` +
