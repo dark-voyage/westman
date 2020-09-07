@@ -1,1 +1,0 @@
-            <a href="https://github.com/${{ github.repository }}/commit/${{ github.sha }}">🔗 Commit</a> | <a href="https://github.com/${{ github.repository }}">🏷 Repo</a> | <a href="https://chisel.uz">📡 Home</a>
