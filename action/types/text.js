@@ -28,14 +28,12 @@ composer.command("text", async (ctx) => {
                 `<b>You requested text command where it will guide you about sending message to confession</b>` +
                 `\n` +
                 `\n` +
-                `<i>In order to send a message to the channel, please use our templates shown below:</i>` +
-                `\n` +
-                `<code>/cm &lt;your very long text here&gt;</code>` +
+                `<i>In order to send a message to the channel, please, just text your messsage!</i>` +
                 `\n` +
                 `\n` +
                 `<i>Example:</i>` +
                 `\n` +
-                `<code>/cm Nobody can see my privacy. I'm private & fast!</code>`,
+                `<code>Hello World!</code>`,
         }
     );
 });
