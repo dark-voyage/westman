@@ -28,7 +28,7 @@ composer.command("text", async (ctx) => {
                 `<b>You requested text command where it will guide you about sending message to confession</b>` +
                 `\n` +
                 `\n` +
-                `<i>In order to send a message to the channel, please, just text your messsage!</i>` +
+                `<i>In order to send a message to the channel, please, just text your message!</i>` +
                 `\n` +
                 `\n` +
                 `<i>Example:</i>` +
