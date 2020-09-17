@@ -1,3 +1,4 @@
+require("./text");
 require("./photo");
 require("./video");
 require("./audio");
