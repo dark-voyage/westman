@@ -6,7 +6,7 @@ const gifs = require("../../database/db").gifs;
 const counter = require("../../database/counter");
 
 composer.on("text", async (ctx) => {
-  const confessionText = ctx.message.text
+  const confessionText = ctx.message.text;
   await ctx.telegram.sendMessage(
     env.CONFESSION,
     `#message => ${await counter()}` + `\n` + `<i>${confessionText}</i>`,
