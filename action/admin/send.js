@@ -31,7 +31,7 @@ composer.hears(/\/send (.*) : (.*)/, async (ctx) => {
 
 composer.hears(/\/send/, async (ctx) => {
   await ctx.replyWithHTML(
-      `<b>In order to send a message to an applicant, use our template as we showed in our examples below:</b>` +
+    `<b>In order to send a message to an applicant, use our template as we showed in our examples below:</b>` +
       `\n` +
       `<code>/send &lt;id : message&gt;</code>` +
       `\n` +
@@ -40,7 +40,7 @@ composer.hears(/\/send/, async (ctx) => {
       `\n` +
       `<code>/send 756870298 : Congrats!</code>`,
     {
-      parse_mode: "HTML"
+      parse_mode: "HTML",
     }
   );
 });

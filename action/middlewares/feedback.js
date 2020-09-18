@@ -22,7 +22,7 @@ composer.hears(/\/feedback (.*)/gi, async (ctx) => {
 
 composer.hears(/\/feedback/, async (ctx) => {
   await ctx.replyWithHTML(
-      `<b>You requested feedback command where you can send feedback to admins</b>` +
+    `<b>You requested feedback command where you can send feedback to admins</b>` +
       `\n` +
       `\n` +
       `<i>In order to send a feedback to us, please use our templates shown below:</i>` +
@@ -34,7 +34,7 @@ composer.hears(/\/feedback/, async (ctx) => {
       `\n` +
       `<code>/feedback Hello dear admins. Chisel Devs team is the best!</code>`,
     {
-      parse_mode: "HTML"
+      parse_mode: "HTML",
     }
   );
 });

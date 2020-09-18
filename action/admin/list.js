@@ -9,17 +9,14 @@ composer.command(`list`, async (ctx) => {
     const list = database.users["temporary"].toString();
 
     if (list === "") {
-      await ctx.replyWithHTML(
-          `<b>Temporary admin list is empty!</b>`,
-        {
-          parse_mode: "HTML"
-        }
-      );
+      await ctx.replyWithHTML(`<b>Temporary admin list is empty!</b>`, {
+        parse_mode: "HTML",
+      });
     } else {
       await ctx.replyWithHTML(
-          `<b>Temporary admins:</b>\n<code>${list}</code>`,
+        `<b>Temporary admins:</b>\n<code>${list}</code>`,
         {
-          parse_mode: "HTML"
+          parse_mode: "HTML",
         }
       );
     }

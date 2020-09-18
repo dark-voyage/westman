@@ -26,7 +26,7 @@ composer.hears(
 
 composer.hears(/\/reply/, async (ctx) => {
   await ctx.replyWithHTML(
-      `<b>You requested reply command where you can reply to a message from the confession</b>` +
+    `<b>You requested reply command where you can reply to a message from the confession</b>` +
       `\n` +
       `\n` +
       `<i>In order to reply to a message on channel, please use our templates shown below:</i>` +
@@ -42,7 +42,7 @@ composer.hears(/\/reply/, async (ctx) => {
       `\n` +
       `<code>/reply 14 : Hey you!</code>`,
     {
-      parse_mode: "HTML"
+      parse_mode: "HTML",
     }
   );
 });

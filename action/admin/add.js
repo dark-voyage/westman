@@ -13,7 +13,7 @@ composer.hears(/\/add (.+)/gi, async (ctx) => {
 
 composer.hears(/\/add/, async (ctx) => {
   await ctx.replyWithHTML(
-      `<b>In order to add a temporary admin, use our template as we showed in our examples below:</b>` +
+    `<b>In order to add a temporary admin, use our template as we showed in our examples below:</b>` +
       `\n` +
       `<code>/add &lt;id&gt;</code>` +
       `\n` +
@@ -22,7 +22,7 @@ composer.hears(/\/add/, async (ctx) => {
       `\n` +
       `<code>/add 123456789</code>`,
     {
-      parse_mode: "HTML"
+      parse_mode: "HTML",
     }
   );
 });

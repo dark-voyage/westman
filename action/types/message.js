@@ -20,7 +20,7 @@ composer.hears(/\/cm (.*)/gi, async (ctx) => {
 
 composer.hears(/\/cm/, async (ctx) => {
   await ctx.replyWithHTML(
-      `<b>You requested cm command where you can send message to the confession</b>` +
+    `<b>You requested cm command where you can send message to the confession</b>` +
       `\n` +
       `\n` +
       `<i>In order to send a message to the channel, please use our templates shown below:</i>` +
@@ -32,7 +32,7 @@ composer.hears(/\/cm/, async (ctx) => {
       `\n` +
       `<code>/cm Nobody can see my privacy. I'm private & fast!</code>`,
     {
-      parse_mode: "HTML"
+      parse_mode: "HTML",
     }
   );
 });

@@ -9,12 +9,9 @@ module.exports = async (ctx, func) => {
   ) {
     await func();
   } else {
-    await ctx.replyWithHTML(
-        message.error_admin,
-      {
-        parse_mode: "HTML",
-        reply_markup: keyboard.error_admin,
-      }
-    );
+    await ctx.replyWithHTML(message.error_admin, {
+      parse_mode: "HTML",
+      reply_markup: keyboard.error_admin,
+    });
   }
 };
