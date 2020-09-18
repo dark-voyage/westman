@@ -9,10 +9,8 @@ const database = require("../../database/db");
 composer.command(`links`, async (ctx) => {
   const links = database.links["links"];
 
-  await ctx.replyWithAnimation(
-    { url: gifs.links },
-    {
-      caption: message.links,
+  await ctx.replyWithHTML(
+      message.links, {
       parse_mode: "HTML",
       reply_markup: await keyboard.links(links),
     }
