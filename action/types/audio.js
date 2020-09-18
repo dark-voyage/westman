@@ -14,9 +14,9 @@ composer.on("audio", async (ctx) => {
     env.CONFESSION,
     { source: content },
     {
-      caption: message.photo(ctx),
+      caption: message.audio(ctx),
       parse_mode: "HTML",
-      reply_markup: keyboard.photo,
+      reply_markup: keyboard.audio,
     }
   );
 });
