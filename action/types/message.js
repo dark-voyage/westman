@@ -20,22 +20,20 @@ composer.hears(/\/cm (.*)/gi, async (ctx) => {
 });
 
 composer.hears(/\/cm/, async (ctx) => {
-  await ctx.replyWithAnimation(
-    { url: gifs.cm },
+  await ctx.replyWithHTML(
+      `<b>You requested cm command where you can send message to the confession</b>` +
+      `\n` +
+      `\n` +
+      `<i>In order to send a message to the channel, please use our templates shown below:</i>` +
+      `\n` +
+      `<code>/cm &lt;your very long text here&gt;</code>` +
+      `\n` +
+      `\n` +
+      `<i>Example:</i>` +
+      `\n` +
+      `<code>/cm Nobody can see my privacy. I'm private & fast!</code>`,
     {
-      parse_mode: "HTML",
-      caption:
-        `<b>You requested cm command where you can send message to the confession</b>` +
-        `\n` +
-        `\n` +
-        `<i>In order to send a message to the channel, please use our templates shown below:</i>` +
-        `\n` +
-        `<code>/cm &lt;your very long text here&gt;</code>` +
-        `\n` +
-        `\n` +
-        `<i>Example:</i>` +
-        `\n` +
-        `<code>/cm Nobody can see my privacy. I'm private & fast!</code>`,
+      parse_mode: "HTML"
     }
   );
 });
