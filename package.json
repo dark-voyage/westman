@@ -1,7 +1,7 @@
 {
-  "name": "unister",
+  "name": "westman",
   "version": "0.0.4",
-  "description": "The telegram bot assistant of The BSBA™ team.",
+  "description": "Telegram bot to manage Westman's Confession.",
   "main": "main.js",
   "scripts": {
     "start": "node bin/www",
@@ -16,7 +16,10 @@
     "npm": ">=6.14.5"
   },
   "keywords": [
-    "Telegram", "Bot", "Helper", "Assistant"
+    "Telegram",
+    "Bot",
+    "Helper",
+    "Assistant"
   ],
   "author": "Genemator Sakhib <genemators@gmail.com> (https://genemator.me)",
   "license": "GPL-3.0",
