@@ -16,11 +16,10 @@ composer.command(`list`, async (ctx) => {
         }
       );
     } else {
-      await ctx.replyWithAnimation(
-        { url: gifs.list },
+      await ctx.replyWithHTML(
+          `<b>Temporary admins:</b>\n<code>${list}</code>`,
         {
-          parse_mode: "HTML",
-          caption: `<b>Temporary admins:</b>\n<code>${list}</code>`,
+          parse_mode: "HTML"
         }
       );
     }
