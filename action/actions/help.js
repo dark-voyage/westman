@@ -19,12 +19,8 @@ composer.action(`help`, async (ctx) => {
       }
     );
   } else {
-    await ctx.editMessageMedia(
-      {
-        type: "animation",
-        media: gifs.help,
-        caption: message.help(false),
-      },
+    await ctx.editMessageText(
+        message.help(false),
       {
         parse_mode: "HTML",
         reply_markup: keyboard.help,
