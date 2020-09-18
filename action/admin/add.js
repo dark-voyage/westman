@@ -1,6 +1,5 @@
 const { composer, middleware } = require("../../core/bot");
 
-const gifs = require("../../database/db").gifs;
 const consoles = require("../../layouts/consoles");
 const security = require("../security");
 const database = require("../../database/db");
@@ -13,19 +12,17 @@ composer.hears(/\/add (.+)/gi, async (ctx) => {
 });
 
 composer.hears(/\/add/, async (ctx) => {
-  await ctx.replyWithAnimation(
-    { url: gifs.add },
+  await ctx.replyWithHTML(
+      `<b>In order to add a temporary admin, use our template as we showed in our examples below:</b>` +
+      `\n` +
+      `<code>/add &lt;id&gt;</code>` +
+      `\n` +
+      `\n` +
+      `<b>Example:</b>` +
+      `\n` +
+      `<code>/add 123456789</code>`,
     {
-      parse_mode: "HTML",
-      caption:
-        `<b>In order to add a temporary admin, use our template as we showed in our examples below:</b>` +
-        `\n` +
-        `<code>/add &lt;id&gt;</code>` +
-        `\n` +
-        `\n` +
-        `<b>Example:</b>` +
-        `\n` +
-        `<code>/add 123456789</code>`,
+      parse_mode: "HTML"
     }
   );
 });
