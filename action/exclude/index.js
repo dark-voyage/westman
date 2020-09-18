@@ -8,11 +8,10 @@ const keyboard = require("../../layouts/keyboards");
 composer.on("text", async (ctx) => {
   if (ctx.chat.type === "private")
     if (!ctx.message["via_bot"])
-      await ctx.replyWithAnimation(
-        { url: gifs.exclude },
+      await ctx.replyWithHTML(
+          message.invalid,
         {
           parse_mode: "HTML",
-          caption: message.invalid,
           reply_markup: keyboard.invalid,
         }
       );
