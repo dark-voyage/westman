@@ -2,7 +2,7 @@
   "name": "westman",
   "version": "0.0.4",
   "description": "Telegram bot to manage Westman's Confession.",
-  "main": "main.js",
+  "main": "bin/www",
   "scripts": {
     "start": "node bin/www",
     "development": "nodemon bin/www",
