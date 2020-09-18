@@ -1,6 +1,5 @@
 const { composer, middleware } = require("../../core/bot");
 
-const gifs = require("../../database/db").gifs;
 const consoles = require("../../layouts/consoles");
 const security = require("../security");
 const database = require("../../database/db");
@@ -10,11 +9,10 @@ composer.command(`list`, async (ctx) => {
     const list = database.users["temporary"].toString();
 
     if (list === "") {
-      await ctx.replyWithAnimation(
-        { url: gifs.list },
+      await ctx.replyWithHTML(
+          `<b>Temporary admin list is empty!</b>`,
         {
-          parse_mode: "HTML",
-          caption: `<b>Temporary admin list is empty!</b>`,
+          parse_mode: "HTML"
         }
       );
     } else {
