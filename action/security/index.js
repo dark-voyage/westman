@@ -10,11 +10,10 @@ module.exports = async (ctx, func) => {
   ) {
     await func();
   } else {
-    await ctx.replyWithAnimation(
-      { url: gifs.security },
+    await ctx.replyWithHTML(
+        message.error_admin,
       {
         parse_mode: "HTML",
-        caption: message.error_admin,
         reply_markup: keyboard.error_admin,
       }
     );
