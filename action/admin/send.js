@@ -1,6 +1,5 @@
 const { composer, middleware } = require("../../core/bot");
 
-const gifs = require("../../database/db").gifs;
 const consoles = require("../../layouts/consoles");
 const security = require("../security");
 
@@ -31,19 +30,17 @@ composer.hears(/\/send (.*) : (.*)/, async (ctx) => {
 });
 
 composer.hears(/\/send/, async (ctx) => {
-  await ctx.replyWithAnimation(
-    { url: gifs.send },
+  await ctx.replyWithHTML(
+      `<b>In order to send a message to an applicant, use our template as we showed in our examples below:</b>` +
+      `\n` +
+      `<code>/send &lt;id : message&gt;</code>` +
+      `\n` +
+      `\n` +
+      `<b>Example:</b>` +
+      `\n` +
+      `<code>/send 756870298 : Congrats!</code>`,
     {
-      parse_mode: "HTML",
-      caption:
-        `<b>In order to send a message to an applicant, use our template as we showed in our examples below:</b>` +
-        `\n` +
-        `<code>/send &lt;id : message&gt;</code>` +
-        `\n` +
-        `\n` +
-        `<b>Example:</b>` +
-        `\n` +
-        `<code>/send 756870298 : Congrats!</code>`,
+      parse_mode: "HTML"
     }
   );
 });
