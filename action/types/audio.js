@@ -8,15 +8,12 @@ const keyboard = require("../../layouts/keyboards");
 const env = require("../../core/env");
 
 composer.on("audio", async (ctx) => {
-    console.log(ctx.message)
   const content = ctx.message.audio.file_id;
   await ctx.replyWithHTML(`<b>Your photo has been received and processing</b>`);
   await ctx.telegram.sendChatAction(ctx.chat.id, "upload_audio");
 
   await ctx.telegram.sendAudio(
-    env.CONFESSION,
-    { source: content },
-    {
+    env.CONFESSION, content, {
       caption: `<b>#audio => ${await counter()}</b>` +
           `\n` +
           `<i>${ctx.message.caption || ` `}</i>`,
