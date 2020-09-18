@@ -11,12 +11,8 @@ composer.action(`help`, async (ctx) => {
     database.users["eternal"].includes(ctx.from.id) ||
     database.users["temporary"].includes(ctx.from.username)
   ) {
-    await ctx.editMessageMedia(
-      {
-        type: "animation",
-        media: gifs.help,
-        caption: message.help(true),
-      },
+    await ctx.editMessageText(
+        message.help(true),
       {
         parse_mode: "HTML",
         reply_markup: keyboard.help,
