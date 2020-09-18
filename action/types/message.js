@@ -2,7 +2,6 @@ const { composer, middleware, filter } = require("../../core/bot");
 
 const consoles = require("../../layouts/consoles");
 const env = require("../../core/env");
-const gifs = require("../../database/db").gifs;
 const counter = require("../../database/counter");
 
 composer.hears(/\/cm (.*)/gi, async (ctx) => {
