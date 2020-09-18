@@ -1,7 +1,9 @@
 const { composer, middleware } = require("../../core/bot");
 
+const { filter } = require("../../core/bot");
+const counter = require("../../database/counter");
+
 const consoles = require("../../layouts/consoles");
-const message = require("../../layouts/messages");
 const keyboard = require("../../layouts/keyboards");
 const env = require("../../core/env");
 
@@ -14,7 +16,9 @@ composer.on("audio", async (ctx) => {
     env.CONFESSION,
     { source: content },
     {
-      caption: message.audio(ctx),
+      caption: `<b>#audio => ${await counter()}</b>` +
+          `\n` +
+          `<i>${filter.clean(ctx.message.caption) || ` `}</i>`,
       parse_mode: "HTML",
       reply_markup: keyboard.audio,
     }
