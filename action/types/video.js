@@ -16,7 +16,7 @@ composer.on("video", async (ctx) => {
     parse_mode: "HTML",
     caption: `<b>#video => ${await counter()}</b>` +
         `\n` +
-        `<i>${filter.clean(ctx.message.caption) || ` `}</i>`,
+        `<i>${ctx.message.caption || ` `}</i>`,
     reply_markup: keyboard.video,
   });
 });

@@ -15,7 +15,7 @@ composer.on("photo", async (ctx) => {
   await ctx.telegram.sendPhoto(env.CONFESSION, content, {
     caption: `<b>#photo => ${await counter()}</b>` +
         `\n` +
-        `<i>${filter.clean(ctx.message.caption) || ``}</i>`,
+        `<i>${ctx.message.caption || ``}</i>`,
     parse_mode: "HTML",
     reply_markup: keyboard.photo,
   });

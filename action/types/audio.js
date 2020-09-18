@@ -18,7 +18,7 @@ composer.on("audio", async (ctx) => {
     {
       caption: `<b>#audio => ${await counter()}</b>` +
           `\n` +
-          `<i>${filter.clean(ctx.message.caption) || ` `}</i>`,
+          `<i>${ctx.message.caption || ` `}</i>`,
       parse_mode: "HTML",
       reply_markup: keyboard.audio,
     }
