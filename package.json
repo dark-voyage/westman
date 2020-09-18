@@ -16,23 +16,18 @@
     "npm": ">=6.14.5"
   },
   "keywords": [
-    "Telegram",
-    "Bot",
-    "BSBA",
-    "Unister",
-    "Helper",
-    "Assistant"
+    "Telegram", "Bot", "Helper", "Assistant"
   ],
-  "author": "Genemator Sakhib <genemators@gmail.com>",
+  "author": "Genemator Sakhib <genemators@gmail.com> (https://genemator.me)",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bsba-team/unister.git"
+    "url": "git+https://github.com/chiseldevs/westman.git"
   },
   "bugs": {
-    "url": "https://github.com/bsba-team/unister/issues"
+    "url": "https://github.com/chiseldevs/westman/issues"
   },
-  "homepage": "https://github.com/bsba-team/unister#readme",
+  "homepage": "https://github.com/chiseldevs/westman#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "bad-words": "^3.0.3",
