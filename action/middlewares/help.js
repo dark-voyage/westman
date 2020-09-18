@@ -11,20 +11,18 @@ composer.help(async (ctx) => {
     database.users["eternal"].includes(ctx.from.id) ||
     database.users["temporary"].includes(ctx.from.username)
   ) {
-    await ctx.replyWithAnimation(
-      { url: gifs.help },
+    await ctx.replyWithHTML(
+        message.help(true),
       {
         parse_mode: "HTML",
-        caption: message.help(true),
         reply_markup: keyboard.help,
       }
     );
   } else {
-    await ctx.replyWithAnimation(
-      { url: gifs.help },
+    await ctx.replyWithHTML(
+        message.help(false),
       {
         parse_mode: "HTML",
-        caption: message.help(false),
         reply_markup: keyboard.help,
       }
     );
