@@ -6,11 +6,10 @@ const message = require("../../layouts/messages");
 const keyboard = require("../../layouts/keyboards");
 
 composer.start(async (ctx) => {
-  await ctx.replyWithAnimation(
-    { url: gifs.start },
+  await ctx.replyWithHTML(
+      message.start,
     {
       parse_mode: "HTML",
-      caption: message.start,
       reply_markup: keyboard.start,
     }
   );
