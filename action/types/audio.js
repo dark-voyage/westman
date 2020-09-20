@@ -12,15 +12,14 @@ composer.on("audio", async (ctx) => {
   await ctx.replyWithHTML(`<b>Your photo has been received and processing</b>`);
   await ctx.telegram.sendChatAction(ctx.chat.id, "upload_audio");
 
-  await ctx.telegram.sendAudio(
-    env.CONFESSION, content, {
-      caption: `<b>#audio => ${await counter()}</b>` +
-          `\n` +
-          `<i>${ctx.message.caption || ` `}</i>`,
-      parse_mode: "HTML",
-      reply_markup: keyboard.audio,
-    }
-  );
+  await ctx.telegram.sendAudio(env.CONFESSION, content, {
+    caption:
+      `<b>#audio => ${await counter()}</b>` +
+      `\n` +
+      `<i>${ctx.message.caption || ` `}</i>`,
+    parse_mode: "HTML",
+    reply_markup: keyboard.audio,
+  });
 });
 
 middleware(composer);

@@ -14,9 +14,10 @@ composer.on("video", async (ctx) => {
 
   await ctx.telegram.sendVideo(env.CONFESSION, content, {
     parse_mode: "HTML",
-    caption: `<b>#video => ${await counter()}</b>` +
-        `\n` +
-        `<i>${ctx.message.caption || ` `}</i>`,
+    caption:
+      `<b>#video => ${await counter()}</b>` +
+      `\n` +
+      `<i>${ctx.message.caption || ` `}</i>`,
     reply_markup: keyboard.video,
   });
 });

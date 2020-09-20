@@ -13,9 +13,10 @@ composer.on("photo", async (ctx) => {
   await ctx.telegram.sendChatAction(ctx.chat.id, "upload_photo");
 
   await ctx.telegram.sendPhoto(env.CONFESSION, content, {
-    caption: `<b>#photo => ${await counter()}</b>` +
-        `\n` +
-        `<i>${ctx.message.caption || ``}</i>`,
+    caption:
+      `<b>#photo => ${await counter()}</b>` +
+      `\n` +
+      `<i>${ctx.message.caption || ``}</i>`,
     parse_mode: "HTML",
     reply_markup: keyboard.photo,
   });
